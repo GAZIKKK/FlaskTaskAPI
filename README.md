@@ -11,14 +11,16 @@
 - Python 3.x
 - Flask (`pip install flask`)
 
-Запустите приложение:
+## Запустите приложение:
 python app.py
 
 API будет доступно по адресу http://127.0.0.1:5000
 
 Добавление задачи: 
 `curl -X POST -H "Content-Type: application/json" -d "{\"title\":\"Купить молоко\",\"description\":\"Сходить в магазин\",\"deadline\":\"20-03-2025\"}" http://127.0.0.1:5000/tasks`
+
 Получение списка задач:
 `curl http://127.0.0.1:5000/tasks`
+
 Удаление задачи:
 `curl -X DELETE http://127.0.0.1:5000/tasks/1`
